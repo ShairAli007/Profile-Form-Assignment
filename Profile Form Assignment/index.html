@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Form</title>
+    <style>
+        .BR{
+            border-radius:5px;
+        }
+        .btnr{
+            border-radius: 20px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="Profile Form Assignment .html">
+        <fieldset>
+            <legend>Name and Address</legend>
+        <table>
+            <tr>
+                <td>Do you use CiviCRM? </td>
+                <td>
+                    <label>
+                         <input type="radio" name="CiviCRM" value="yes"> Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="CiviCRM" value="no"> No
+                    </label>
+                    <a href="#">(unselect)</a>
+                </td>
+            </tr>
+            <tr>
+                <td>How long have you been using <br> CiviCRM?</td>
+                <td>
+                    <select class="BR" name="civicrm-duration">
+                        <option value="">-- Select --</option>
+                        <option value="less-than-1">Less than 1 year</option>
+                        <option value="1-year">1 year</option>
+                        <option value="2 years">2 years</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Which CMS do you use? </td>
+                <td>
+                    <select class="BR" name="cms">
+                        <option value="">-- Select --</option>
+                        <option value="wordpress">Wordpress</option>
+                        <option value="shopify">Shopify</option>
+                        <option value="joomla">Joomla</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Your skill set</td>
+                <td>
+                    <select class="BR" name="skill">
+                        <option value="">-- Select --</option>
+                        <option value="frontend">Front End Developer</option>
+                        <option value="backend">Back End Developer</option>
+                        <option value="fullstack">Fullstack Developer</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Email *</td>
+                <td>
+                    <input type="email" name="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>First Name *</td>
+                <td>
+                    <input type="text" name="firstname" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name *</td>
+                <td>
+                    <input type="text" name="lastname" required>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p>First and last name will be shared with other visitors to the site.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Street Address (Home)</td>
+                <td>
+                    <input type="text" name="address" size="40" >
+                </td>
+            </tr>
+            <tr>
+                <td>City (Home)</td>
+                <td>
+                    <input type="text" name="city">
+                </td>
+            </tr>
+            <tr>
+                <td>Postal Code (Home)</td>
+                <td>
+                    <input type="text" name="postalcode" size="8">
+                </td>
+            </tr>
+            <tr>
+                <td>Country (Home)</td>
+                <td>
+                    <select class="BR" name="country">
+                        <option value="us">United State</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p>Your state/province and country of residence will be shared with others so folks can find others in their community.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>State (Home)</td>
+                <td>
+                    <select class="BR" name="state">
+                        <option value=""> -- Select --</option>
+                        <option value="ny">New York, New Jersey, Pennsylvania</option>
+                        <option value="ca">California</option>
+                        <option value="tx">Texas</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+        <button class="btnr" type="submit">Save</button>
+        <button class="btnr" type="reset">Cancel</button>
+    </form>
+
+</body>
+</html>
